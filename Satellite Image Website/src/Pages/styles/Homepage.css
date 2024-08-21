@@ -1,0 +1,217 @@
+.body-container {
+  padding: 6% 1%;
+  padding-bottom: 0%;
+  margin-bottom: 0%;
+  height: 100vh;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  /* Stack elements vertically */
+  align-items: center;
+  /* Center elements horizontally */
+  /* text-align: center; */
+}
+
+
+
+.intro .heading {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  
+}
+
+.intro .heading .compname{
+  justify-items: center;
+  text-align: center;
+  font-size: 5rem;
+  padding-bottom: 0.5%;
+  padding-top: 5%;
+
+}
+
+/* .intro h1 {
+  font-size: 3rem;
+  padding: 3%;
+} */
+
+.intro h2 {
+  font-size: 3rem;
+  width: 50rem;
+  padding: 3%;
+}
+
+.intro .heading p {
+  font-size: 1.2rem;
+  padding: 2%;
+  width: 60%;
+  text-align: center;
+  margin: 1% auto;
+}
+
+/* .intro .heading .getStarted button
+{
+
+  background-color: transparent;
+  border: none;
+} */
+
+/* .intro .heading .getStarted button{
+  padding: 10%;
+  border: 3px solid white;
+  border-radius:10em; 
+  width: 20%;
+  margin: auto;
+  font-weight: bold;
+  background-color: transparent;
+} */
+
+/* .intro .heading .getStarted button:hover
+{
+  color: cyan;
+  border-color: cyan;
+  transition: 1s;
+} */
+
+/* .intro .heading .getStarted button {
+  padding: 10%;
+  background: transparent;
+  position: relative;
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid darkblue;
+  border-radius: 25px;
+  outline: none;
+  overflow: hidden;
+  color: cyan;
+  transition: color 0.3s 0.1s ease-out;
+  text-align: center;
+}
+
+.intro .heading .getStarted button span {
+  margin: 10px;
+  width: 50px;
+  text-align: center;
+  padding: 10px;
+}
+
+.intro .heading .getStarted button::before {
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  content: '';
+  border-radius: 50%;
+  display: block;
+  width: 20em;
+  height: 20em;
+  left: -5em;
+  text-align: center;
+  transition: box-shadow 0.5s ease-out;
+  z-index: -1;
+}
+
+.intro .heading .getStarted button:hover {
+  color: #fff;
+  border: 1px solid teal;
+  text-align: center;
+}
+
+.intro .heading .getStarted button:hover::before {
+  box-shadow: inset 0 0 0 10em cyan;
+} */
+
+
+
+.image-container {
+  display: flex;
+  justify-content: space-between; 
+  /* Distribute images horizontally */
+  /* margin-top: 20px; */
+  /* Add space between paragraph and images */
+}
+
+
+.image-container .pic {
+  border: 1%;
+  padding: 3%;
+}
+
+.bg-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../../Components/satbg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1; /* Ensure the container is behind other content */
+} 
+
+
+/* Existing CSS */
+.intro .heading .getStarted button:hover {
+  color: cyan;
+  border-color: cyan;
+  transition: 1s;
+}
+
+/* New CSS */
+.custom-button {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+  --border-right: 6px;
+  --text-stroke-color: rgba(201, 187, 187, 0.6);
+  --animation-color: darkblue;
+  padding: 1px;
+  --fs-size: 2em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Arial";
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+
+.custom-button .button-text {
+  color: inherit;
+  -webkit-text-stroke: inherit;
+}
+
+.custom-button .hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+
+.custom-button:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color));
+}

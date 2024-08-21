@@ -1,0 +1,94 @@
+.body-container {
+    padding: 6% 1%;
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+    height: 100vh;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    /* Stack elements vertically */
+    align-items: center;
+    /* Center elements horizontally */
+    /* text-align: center; */
+}
+
+
+
+.intro .heading {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.intro .heading .compname{
+    justify-items: center;
+    text-align: center;
+    font-size: 5rem;
+    padding-bottom: 0.5%;
+    padding-top: 5%;
+
+}
+
+/* .intro h1 {
+    font-size: 3rem;
+    padding: 3%;
+} */
+
+.intro h2 {
+    font-size: 3rem;
+    width: 50rem;
+    padding: 3%;
+}
+
+.intro .heading p {
+    font-size: 1.2rem;
+    padding: 2%;
+    width: 60%;
+    text-align: center;
+    margin: 1% auto;
+}
+
+/* .intro .heading .getStarted button
+{
+
+    background-color: transparent;
+    border: none;
+} */
+
+.intro .heading .getStarted button{
+    padding: 1%;
+    border: 3px solid white;
+    border-radius:10em; 
+    width: 20%;
+    margin: auto;
+    font-weight: bold;
+    background-color: transparent;
+}
+
+.intro .heading .getStarted button:hover
+{
+    color: cyan;
+    border-color: cyan;
+    transition: 1s;
+}
+
+
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    /* Distribute images horizontally */
+    margin-top: 20px;
+    /* Add space between paragraph and images */
+}
+
+
+.image-container .pic {
+    border: 1%;
+    padding: 3%;
+}

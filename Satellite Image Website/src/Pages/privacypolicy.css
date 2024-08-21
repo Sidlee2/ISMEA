@@ -1,0 +1,40 @@
+/* PrivacyPolicy.css */
+.privacy-policy {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("../Components/satbg.jpg") no-repeat center center fixed;
+    max-width: auto;
+    margin: auto;
+    padding: 40px;
+    text-align: left;
+  }
+  
+  .privacy-policy h1 {
+    padding: 40px;
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+  
+  .policy-section {
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 30px;
+    text-align: left;
+    /* border: solid 2px teal;
+    border-radius: 10px; */
+    /* box-shadow: 1px 1px 20px rgba(155, 217, 236, 0.5); */
+
+  }
+  
+  .policy-section h2 {
+    font-family: Georgia, serif;
+    text-align: left;
+    font-size: 1.5rem;
+    padding-top: 20px;
+    text-decoration: underline;
+  }
+  
+  .policy-section p {
+    line-height: 1.0;
+    text-align: left;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }

@@ -1,0 +1,42 @@
+/*termsandconditions.css */
+
+.terms-container {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("../Components/satbg.jpg") no-repeat center center fixed;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    padding: 40px;
+    text-align: left;
+  }
+  
+  .terms-h1 {
+    padding: 40px;
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+  
+  /* .terms-h2 {
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 30px;
+    text-align: left;
+    /* border: solid 2px teal;
+    border-radius: 10px; */
+    /* box-shadow: 1px 1px 20px rgba(155, 217, 236, 0.5); 
+
+  } */
+  
+  .terms-h2 {
+    font-family: Georgia, serif;
+    text-align: left;
+    font-size: 1.5rem;
+    padding-top: 20px;
+    text-decoration: underline;
+  }
+  
+  .terms-p {
+    line-height: 1.0;
+    text-align: left;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }

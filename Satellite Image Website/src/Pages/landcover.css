@@ -1,0 +1,124 @@
+/* landcover.css */
+/* Reset some default styles */
+/* body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+} */
+
+/* Container styles */
+.land-cover-container {
+  background-image: url('../Components/satbg.jpg');
+  background-size: cover;
+  min-height: 100vh; /* Set the minimum height to 100% of the viewport height */
+  display: flex;
+  flex-direction: column;
+  background-color: #0f0f0f;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  padding-top: 5%;
+}
+
+/* Title styles */
+h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+/* Description styles */
+.description {
+  background-color: #1d1d1d;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto 20px; /* Center horizontally */
+  text-align: left;
+}
+
+/* Input fields styles */
+.input-container-lc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.input-container-lc select {
+  margin-right: 10px;
+  padding: 8px 32px 8px 12px; /* Adjust padding for dropdown arrow */
+  border: none;
+  border-radius: 4px;
+  background-color: #333;
+  color: #fff;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-size: 16px; /* Increase font size */
+  cursor: pointer; /* Add pointer cursor */
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10l5 5 5-5H7z' fill='%23fff'/%3E%3C/svg%3E"); /* Custom arrow icon */
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+}
+
+/* Add custom arrow for the dropdown */
+.input-container-lc select::-ms-expand {
+  display: none;
+}
+
+.input-container-lc select {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10l5 5 5-5H7z' fill='%23fff'/%3E%3C/svg%3E"); /* Custom arrow icon */
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  padding-right: 28px; /* Make space for the arrow */
+}
+
+.input-container-lc button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 16px; /* Increase font size */
+  transition: background-color 0.3s ease; /* Add transition for hover effect */
+}
+
+.input-container-lc button:hover {
+  background-color: #0056b3; /* Change background color on hover */
+}
+
+/* Image styles */
+.image-container-lc {
+  margin: 20px auto; /* Center the container horizontally */
+  border: 2px solid white;
+  padding: 10px;
+  max-width: 800px; /* Set a maximum width */
+  background-color: #1d1d1d; /* Add a background color */
+  border-radius: 8px; /* Add rounded corners */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center the image vertically */
+  height: 32rem;
+  width: 100rem;
+}
+
+.satellite-image {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Make the image a block-level element */
+}
+
+/* Classification result styles */
+/* .classification-result {
+  text-align: left;
+  max-width: 800px;
+}
+
+.classification-result ul {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+
+.classification-result li {
+  margin-bottom: 5px;
+} */

@@ -1,0 +1,168 @@
+.error-message-container {
+    position: fixed;
+    top: 60px; /* Adjust this value based on the height of your navbar */
+    right: 0;
+    z-index: 9999;
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .error-message-box {
+    background-color: rgba(128, 128, 128, 0.5);
+    color: #fff;
+    padding: 1rem;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    animation: slideInRight 0.5s ease, glitch 1s;
+    animation-timing-function: steps(2, end);
+    border: 3px solid rgb(0, 255, 213);
+    box-shadow: 0px 10px 10px -10px rgb(0, 255, 213);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .error-message-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+    animation: glitch 1s, glitchOut 1s 4s forwards;
+    animation-timing-function: steps(2, end);
+    clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+  }
+  
+  .error-message-box::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+    animation: fadeOut 4s 1s forwards;
+  }
+  
+  .error-message-text {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(128, 128, 128, 0.5);
+    padding: 0.5rem;
+    border-radius: 4px;
+  }
+  
+  @keyframes slideInRight {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes glitch {
+    0% {
+      clip-path: polygon(0 40%, 100% 40%, 100% 60%, 0 60%);
+      transform: translate(-4px, 4px);
+    }
+    10% {
+      clip-path: polygon(0 20%, 100% 20%, 100% 80%, 0 80%);
+      transform: translate(-4px, 8px);
+    }
+    20% {
+      clip-path: polygon(0 60%, 100% 60%, 100% 40%, 0 40%);
+      transform: translate(4px, 8px);
+    }
+    30% {
+      clip-path: polygon(0 30%, 100% 30%, 100% 70%, 0 70%);
+      transform: translate(8px, 4px);
+    }
+    40% {
+      clip-path: polygon(0 80%, 100% 80%, 100% 20%, 0 20%);
+      transform: translate(4px, -4px);
+    }
+    50% {
+      clip-path: polygon(0 50%, 100% 50%, 100% 50%, 0 50%);
+      transform: translate(-4px, -4px);
+    }
+    60% {
+      clip-path: polygon(0 70%, 100% 70%, 100% 30%, 0 30%);
+      transform: translate(-8px, 4px);
+    }
+    70% {
+      clip-path: polygon(0 40%, 100% 40%, 100% 60%, 0 60%);
+      transform: translate(8px, 8px);
+    }
+    80% {
+      clip-path: polygon(0 20%, 100% 20%, 100% 80%, 0 80%);
+      transform: translate(4px, -4px);
+    }
+    90% {
+      clip-path: polygon(0 60%, 100% 60%, 100% 40%, 0 40%);
+      transform: translate(-4px, 4px);
+    }
+    100% {
+      clip-path: polygon(0 30%, 100% 30%, 100% 70%, 0 70%);
+      transform: translate(0, 0);
+    }
+  }
+  
+  @keyframes glitchOut {
+    0% {
+      clip-path: polygon(0 30%, 100% 30%, 100% 70%, 0 70%);
+      transform: translate(0, 0);
+    }
+    10% {
+      clip-path: polygon(0 60%, 100% 60%, 100% 40%, 0 40%);
+      transform: translate(-4px, 4px);
+    }
+    20% {
+      clip-path: polygon(0 20%, 100% 20%, 100% 80%, 0 80%);
+      transform: translate(4px, -4px);
+    }
+    30% {
+      clip-path: polygon(0 80%, 100% 80%, 100% 20%, 0 20%);
+      transform: translate(8px, 4px);
+    }
+    40% {
+      clip-path: polygon(0 30%, 100% 30%, 100% 70%, 0 70%);
+      transform: translate(4px, -4px);
+    }
+    50% {
+      clip-path: polygon(0 50%, 100% 50%, 100% 50%, 0 50%);
+      transform: translate(-4px, 4px);
+    }
+    60% {
+      clip-path: polygon(0 70%, 100% 70%, 100% 30%, 0 30%);
+      transform: translate(-8px, 8px);
+    }
+    70% {
+      clip-path: polygon(0 40%, 100% 40%, 100% 60%, 0 60%);
+      transform: translate(8px, -4px);
+    }
+    80% {
+      clip-path: polygon(0 60%, 100% 60%, 100% 40%, 0 40%);
+      transform: translate(4px, 8px);
+    }
+    90% {
+      clip-path: polygon(0 20%, 100% 20%, 100% 80%, 0 80%);
+      transform: translate(-4px, -8px);
+    }
+    100% {
+      clip-path: polygon(0 40%, 100% 40%, 100% 60%, 0 60%);
+      transform: translate(0, 0);
+    }
+  }
+  
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }

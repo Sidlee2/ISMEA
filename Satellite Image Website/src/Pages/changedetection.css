@@ -1,0 +1,169 @@
+/* changedetection.css */
+.change-detection-container {
+  background-image: url('../Components/satbg.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #0f0f0f;
+  color: #fff;
+  padding: 20px; /* Remove top padding */
+  text-align: center;
+}
+
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  margin-top: 60px; /* Add some top margin to move the heading down */
+  position: relative; /* Change to relative positioning */
+  background-color: #0f0f0f;
+  padding: 20px;
+}
+
+
+.change-detection-heading {
+  font-size: 36px;
+  margin-bottom: 10px;
+  margin-top: 90px;
+  text-align: center;
+}
+
+.description {
+  background-color: #1d1d1d;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 800px;
+  margin: 80px auto 20px; /* Add top margin to create space for the fixed heading */
+  text-align: left;
+  font-size: 16px;
+}
+
+.input-container-cd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.input-container-cd select {
+  margin-right: 10px;
+  padding: 8px 40px 8px 16px; /* Increase right padding for dropdown arrow */
+  border: none;
+  border-radius: 4px;
+  background-color: #333;
+  color: #fff;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-size: 16px;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10l5 5 5-5H7z' fill='%23fff'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center; /* Move the arrow icon position */
+  width: 200px; /* Set a fixed width for the dropdown */
+}
+
+.input-container-cd select::-ms-expand {
+  display: none;
+}
+
+.input-container-cd button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 20px;
+  cursor: pointer;
+  font-size: 16px; /* Increase font size */
+  transition: background-color 0.3s ease; /* Add transition for hover effect */
+}
+
+.input-section-cd {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.input-section-cd select {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  background-color: #333;
+  color: #fff;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.description {
+  background-color: #1d1d1d;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto 20px;
+  text-align: left;
+}
+
+.image-container-cd {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.image-container-cd {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.changed-image-container {
+  margin: 20px auto;
+  border: 2px solid white;
+  padding: 10px;
+  max-width: 800px;
+  background-color: #1d1d1d;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25rem;
+  width: 100rem;
+}
+
+.image-box-cd {
+  width: 48%;
+  border: 2px solid white;
+  padding: 10px;
+  background-color: #1d1d1d;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25rem;
+}
+
+.satellite-image-cd {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Make the image a block-level element */
+}
+
+.apply-button-cd {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin-left: 10px; /* Add some spacing between input fields and button */
+}
+.apply-button-cd:hover {
+  background-color: #0056b3;
+}
